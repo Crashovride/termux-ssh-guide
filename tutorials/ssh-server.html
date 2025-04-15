@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Running SSH Server in Termux</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header><h1>Running SSH Server in Termux</h1></header>
+  <section>
+    <h2>Step-by-Step Guide</h2>
+    <ol>
+      <li>Install Termux from <a href="https://f-droid.org/en/packages/com.termux/">F-Droid</a>.</li>
+      <li>Update packages:
+        <pre>pkg update && pkg upgrade</pre>
+      </li>
+      <li>Install OpenSSH:
+        <pre>pkg install openssh</pre>
+      </li>
+      <li>Create a password for your Termux user:
+        <pre>passwd</pre>
+      </li>
+      <li>Start the SSH server:
+        <pre>sshd</pre>
+      </li>
+      <li>Check your local IP address:
+        <pre>ip a</pre>
+      </li>
+      <li>Now SSH into the device from another machine:
+        <pre>ssh u0_aXXX@<device-ip></pre>
+        Replace u0_aXXX with your actual Termux username.
+      </li>
+    </ol>
+    <p><strong>Tip:</strong> Use <code>termux-info</code> to check system details.</p>
+  </section>
+</body>
+</html>

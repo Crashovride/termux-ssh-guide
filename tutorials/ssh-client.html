@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Using Termux as SSH Client</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header><h1>Using Termux as an SSH Client</h1></header>
+  <section>
+    <h2>How to Connect to Remote Servers</h2>
+    <ol>
+      <li>Install OpenSSH if not already installed:
+        <pre>pkg install openssh</pre>
+      </li>
+      <li>Connect to a remote server:
+        <pre>ssh username@remote-ip</pre>
+      </li>
+      <li>Accept the host key and enter your password when prompted.</li>
+      <li>You now have terminal access to the remote machine.</li>
+    </ol>
+    <p><strong>Bonus:</strong> Use <code>-p</code> to specify a port (e.g. <code>ssh -p 2222 user@ip</code>).</p>
+  </section>
+</body>
+</html>

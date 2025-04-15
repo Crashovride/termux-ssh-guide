@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Securing Your SSH Setup</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header><h1>Securing Your SSH Setup</h1></header>
+  <section>
+    <h2>Security Best Practices</h2>
+    <ul>
+      <li><strong>Use Strong Passwords:</strong> Avoid default or weak passwords.</li>
+      <li><strong>Change Default Port:</strong> Edit <code>~/.ssh/sshd_config</code> and change:
+        <pre>Port 2222</pre>
+      </li>
+      <li><strong>Disable Password Login:</strong> Allow only key-based access for extra security.</li>
+      <li><strong>Use SSH Keys:</strong>
+        <ol>
+          <li>Generate key: <code>ssh-keygen</code></li>
+          <li>Copy key to server: <code>ssh-copy-id user@host</code></li>
+        </ol>
+      </li>
+      <li><strong>Regularly Monitor Logs:</strong> Use <code>logcat</code> or check <code>~/.ssh</code> for auth activity.</li>
+    </ul>
+  </section>
+</body>
+</html>
